@@ -60,11 +60,11 @@ public class Tablero extends JPanel implements ActionListener, KeyListener{
     
     protected void paintComponent(Graphics g) {
          super.paintComponent(g);
-         for(int i = 0; i < (22*20); i+=22){
+         for(int i = 0; i < (22*46); i+=22){
             g.setColor(Color.RED);
             
             g.drawImage(loadImage("blue_background.png"), i, 0, this);
-            g.drawRect(i, 300, 112, 68);
+            //g.drawRect(i, 300, 112, 68);
          }
          for(Circulo c: this.circulo)
             c.dibujar(g,this);
